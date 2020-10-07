@@ -1,6 +1,6 @@
 from . import battle
 from .role import Knight, Archer
-from .interface import bar, clear, query, simple_query, wrap, Prompt
+from .interface import clear, query, simple_query, Prompt
 
 PLAYER = None
 

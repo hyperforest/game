@@ -33,15 +33,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-'''
-@P
-class Q:
-  @prompt_function
-  def a(self):
-    print('a')
-  @prompt_function
-  def b(self):
-    print('b')
-'''

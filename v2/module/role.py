@@ -6,7 +6,7 @@ def _get_stats_exponential(value, level, factor=0.1):
         result += floor(factor * result)
     return result
 
-class Role(object):
+class Role:
     def __init__(self, 
             base_hp,
             base_atk,
@@ -73,19 +73,19 @@ class Role(object):
 class Knight(Role):
     def __init__(self, level=1):
         super().__init__(
-            base_hp=100,
-            base_atk=20,
-            atk_speed=2,
-            atk_range=2,
-            move_speed=3,
+            base_hp    = 100,
+            base_atk   = 20,
+            atk_speed  = 2,
+            atk_range  = 2,
+            move_speed = 3,
             level=level)
 
 class Archer(Role):
     def __init__(self, level=1):
         super().__init__(
-            base_hp=100,
-            base_atk=20,
-            atk_speed=2,
-            atk_range=10,
-            move_speed=2,
+            base_hp    = 100,
+            base_atk   = 20,
+            atk_speed  = 2,
+            atk_range  = 10,
+            move_speed = 2,
             level=level)
