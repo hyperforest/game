@@ -1,6 +1,6 @@
 from math import floor
 
-def __get_stats_exponential(value, level, factor=0.1):
+def _get_stats_exponential(value, level, factor=0.1):
     result = value
     for _ in range(level - 1):
         result += floor(factor * result)
@@ -16,8 +16,8 @@ class Role(object):
             level=1):
         
         # base stats, private, can not be changed during survival
-        self.__base_hp = __get_stats_exponential(base_hp, level)
-        self.__base_atk = __get_stats_exponential(base_atk, level)
+        self.__base_hp = _get_stats_exponential(base_hp, level)
+        self.__base_atk = _get_stats_exponential(base_atk, level)
         self.__base_atk_speed = atk_speed
         self.__base_atk_range = atk_range
         self.__base_move_speed = move_speed
@@ -61,8 +61,8 @@ class Role(object):
             self.move_speed = value * self.__base_move_speed
 
     def set_all_stats_to_level(self, level):
-        self.hp = __get_stats_exponential(self.__base_hp, level)
-        self.atk = __get_stats_exponential(self.__base_atk, level)
+        self.hp = _get_stats_exponential(self.__base_hp, level)
+        self.atk = _get_stats_exponential(self.__base_atk, level)
 
     def attack(self, other):
         remaining_hp = max(0, other.hp - self.atk)
@@ -72,7 +72,7 @@ class Role(object):
 
 class Knight(Role):
     def __init__(self, level=1):
-        super(Knight, self).__init__(
+        super().__init__(
             base_hp=100,
             base_atk=20,
             atk_speed=2,
@@ -82,7 +82,7 @@ class Knight(Role):
 
 class Archer(Role):
     def __init__(self, level=1):
-        super(Archer, self).__init__(
+        super().__init__(
             base_hp=100,
             base_atk=20,
             atk_speed=2,

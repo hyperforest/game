@@ -20,23 +20,25 @@ CHOOSE_SURVIVOR = '''
 (1) Knight
 (2) Archer'''
 
-class GameStarter(Prompt):
-    def get_opt(self):
+@Prompt
+class _GameStarter:
+    def ask():
         return query(MENU, num=3)
 
-    def opt_1(self):
+    def battle():
         # should be start battle
         clear()
         print('under construction')
 
-    def opt_2(self):
+    def back():
         clear()
-        return 0
 
+    functions = [battle, back]
+    stop = [back]
 
 class Game(object):
     def __init__(self):
-        self.starter = GameStarter()
+        self.starter = _GameStarter()
         self.player = None
 
         clear()
@@ -45,6 +47,4 @@ class Game(object):
         # TO DO: implement game start more
 
     def start(self):
-        get_opt = self.starter.get_opt
-        functions = [self.starter.opt_1, self.starter.opt_2]
-        self.starter.run(get_opt=get_opt, functions=functions)
+        self.starter.run()

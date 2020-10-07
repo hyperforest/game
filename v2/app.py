@@ -9,25 +9,39 @@ HOME = '''
 (1) New game
 (2) Exit'''
 
-class MainMenu(Prompt):
-    def get_opt(self):
+@Prompt
+class MainMenu:
+    def ask():
         return query(HOME, num=3)
 
-    def opt_1(self):
+    def start():
         game = Game()
         game.start()
 
-    def opt_2(self):
+    def end():
         wrap('Thanks for Playing!', newline=True)
         wait()
         clear()
-        return 0
+        # exit()
+
+    functions = [start, end]
+    stop = [end]
 
 def main():
     menu = MainMenu()
-    get_opt = menu.get_opt
-    functions = [menu.opt_1, menu.opt_2]
-    menu.run(get_opt=get_opt, functions=functions)
+    menu.run()
 
 if __name__ == '__main__':
     main()
+
+
+'''
+@P
+class Q:
+  @prompt_function
+  def a(self):
+    print('a')
+  @prompt_function
+  def b(self):
+    print('b')
+'''

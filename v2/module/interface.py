@@ -18,6 +18,7 @@ def wrap(message, clr=False, newline=False):
     if newline:
         print()
     
+    bar()
     print(message)
     bar()
 
@@ -83,39 +84,55 @@ def generate_text_box(texts, h_margin=1, v_margin=1,
     result += '\n'.join([v_border * width] * v_width)
     return result
 
-class Prompt(object):
-    def run(self, get_opt, functions, head=None, foot=None):
-        num_options = len(functions)
+class Prompt:
+    def __init__(self, prompt):
+        self.prompt = prompt
+        self.functions = []
+        self.stop = []
+
+        if hasattr(prompt, 'head'):
+            self.head = self.prompt.head
+        if hasattr(prompt, 'foot'):
+            self.foot = self.prompt.foot
+
+    def __call__(self):
+        return self
+
+    def head(self):
+        pass
+
+    def foot(self):
+        pass
+
+    def run(self):
+        num_options = len(self.prompt.functions)
         availables = [str(_ + 1) for _ in range(num_options)]
 
         clear()
-        opt = '0'
-        while opt not in availables:
-            opt = get_opt()
-            if head != None:
-                head()
+        continue_ask = True
+        while continue_ask:
+            opt = self.prompt.ask()
+            if opt not in availables:
+                self.repeat(opt)
+                continue
 
-            continue_get_opt = None
-            done = False
-            for _ in range(num_options):
-                if opt == availables[_]:
-                    continue_get_opt = functions[_]()
+            self.head()
+
+            for i in range(num_options):
+                if opt == availables[i]:
+                    self.prompt.functions[i]()
+                    continue_ask = (self.prompt.functions[i]
+                        not in self.prompt.stop)
                     done = True
             
-            if continue_get_opt == 0:
+            if not continue_ask:
                 break
-            if not done:
-                self.repeat(opt)
-            if foot != None:
-                foot()
+            
+            self.foot()
 
-            opt = '0'
-
-    def repeat(self, opt, clr=True, newline=True):
-        if clr:
-            clear()
-        if newline:
-            print()                
+    def repeat(self, opt):
+        clear()
+        print()              
         print(generate_text_box(
             'OPTION %s IS NOT AVAILABLE!\n'
             'Please choose the other option.' % opt)
