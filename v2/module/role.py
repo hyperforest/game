@@ -1,5 +1,8 @@
 from math import floor
 
+def get_role(index):
+    return __role__[index - 1]
+
 def _get_stats_exponential(value, level, factor=0.1):
     result = value
     for _ in range(level - 1):
@@ -89,3 +92,5 @@ class Archer(Role):
             atk_range  = 10,
             move_speed = 2,
             level=level)
+
+__role__ = [Knight, Archer]

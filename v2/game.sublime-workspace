@@ -1,0 +1,1391 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"load",
+				"load_game"
+			],
+			[
+				"save",
+				"save_name"
+			],
+			[
+				"game",
+				"game"
+			],
+			[
+				"pla",
+				"players"
+			],
+			[
+				"retur",
+				"return_int"
+			],
+			[
+				"retu",
+				"return_int"
+			],
+			[
+				"ret",
+				"return_int"
+			],
+			[
+				"name",
+				"name_message"
+			],
+			[
+				"char",
+				"char_message"
+			],
+			[
+				"num",
+				"num_players"
+			],
+			[
+				"new",
+				"new_box"
+			],
+			[
+				"po",
+				"poin_dungeon"
+			],
+			[
+				"N",
+				"N"
+			],
+			[
+				"C",
+				"C"
+			],
+			[
+				"tuk",
+				"tukar_s"
+			],
+			[
+				"m",
+				"m"
+			],
+			[
+				"v",
+				"v"
+			],
+			[
+				"cari",
+				"cari_kiri"
+			],
+			[
+				"car",
+				"cari_ada"
+			],
+			[
+				"c",
+				"cari_ada"
+			],
+			[
+				"func",
+				"functions"
+			],
+			[
+				"cont",
+				"continue_ask"
+			],
+			[
+				"stop",
+				"stop_ask"
+			],
+			[
+				"star",
+				"starter"
+			],
+			[
+				"_",
+				"__\t__magic__"
+			],
+			[
+				"repe",
+				"repeat_message"
+			],
+			[
+				"f",
+				"functions"
+			],
+			[
+				"h_",
+				"h_width"
+			],
+			[
+				"text",
+				"text_list"
+			],
+			[
+				"top",
+				"top_bottom_margin"
+			],
+			[
+				"ed",
+				"edge_width"
+			],
+			[
+				"te",
+				"text_list"
+			],
+			[
+				"bot",
+				"bottom_border"
+			],
+			[
+				"e",
+				"edge_width"
+			],
+			[
+				"top_",
+				"top_width"
+			],
+			[
+				"edge",
+				"edge_border"
+			],
+			[
+				"bottom",
+				"bottom_width"
+			],
+			[
+				"level",
+				"level"
+			],
+			[
+				"__bas",
+				"__base_hp"
+			],
+			[
+				"__atk",
+				"__base_atk_range"
+			],
+			[
+				"atk",
+				"atk_range"
+			],
+			[
+				"__base_atk",
+				"__base_atk_speed"
+			],
+			[
+				"__b",
+				"__base_hp"
+			],
+			[
+				"__",
+				"__get_stats_exponential"
+			],
+			[
+				"base",
+				"base_hp"
+			],
+			[
+				"base_",
+				"base_atk"
+			],
+			[
+				"opt",
+				"option_list"
+			],
+			[
+				"hp_aw",
+				"hp_awal_lawan"
+			],
+			[
+				"hp",
+				"hp_player"
+			],
+			[
+				"random",
+				"random_lawan"
+			],
+			[
+				"rand",
+				"randint"
+			],
+			[
+				"PILI",
+				"PILIH_KARAKTER"
+			],
+			[
+				"PLAYER",
+				"PLAYER"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"time",
+				"time_limit"
+			],
+			[
+				"read",
+				"read_file"
+			],
+			[
+				"ot",
+				"out_file"
+			],
+			[
+				"fart",
+				"farthest_node"
+			],
+			[
+				"far",
+				"farthest_node"
+			],
+			[
+				"find",
+				"find_farthest"
+			],
+			[
+				"old_",
+				"old_damage"
+			],
+			[
+				"player",
+				"player"
+			],
+			[
+				"leve",
+				"level_a"
+			],
+			[
+				"w",
+				"w"
+			],
+			[
+				"prima",
+				"prima_ke"
+			],
+			[
+				"p",
+				"print"
+			],
+			[
+				"n",
+				"neg"
+			],
+			[
+				"load_",
+				"load_matrix"
+			],
+			[
+				"model",
+				"model_path"
+			],
+			[
+				"optim",
+				"optimizers"
+			],
+			[
+				"out",
+				"output_dim"
+			],
+			[
+				"predic",
+				"predict_every"
+			],
+			[
+				"child",
+				"child_list"
+			],
+			[
+				"g",
+				"g"
+			],
+			[
+				"tc",
+				"tc_path"
+			],
+			[
+				"img",
+				"img_height"
+			],
+			[
+				"img_",
+				"img_width"
+			],
+			[
+				"input",
+				"input_img_data"
+			],
+			[
+				"s_",
+				"s_time"
+			],
+			[
+				"fi",
+				"filter_index"
+			],
+			[
+				"tensor",
+				"tensorflow"
+			],
+			[
+				"gra",
+				"gradient"
+			],
+			[
+				"def",
+				"defs\tMethod"
+			],
+			[
+				"next",
+				"next"
+			],
+			[
+				"iter",
+				"iter_start"
+			],
+			[
+				"fro",
+				"format"
+			],
+			[
+				"F",
+				"F"
+			],
+			[
+				"get",
+				"getProba"
+			],
+			[
+				"co",
+				"count_node"
+			],
+			[
+				"pus",
+				"push_back"
+			],
+			[
+				"pA",
+				"pA"
+			],
+			[
+				"pa",
+				"pa"
+			],
+			[
+				"indiv",
+				"individual_score"
+			],
+			[
+				"Pop",
+				"Population"
+			],
+			[
+				"poo",
+				"pool_sizes"
+			],
+			[
+				"ind",
+				"indiv_score"
+			],
+			[
+				"indi",
+				"individual_score"
+			],
+			[
+				"pool",
+				"pool_size"
+			],
+			[
+				"print",
+				"printf\tprintf …"
+			],
+			[
+				"prin",
+				"printf\tprintf …"
+			],
+			[
+				"ve",
+				"vector\tstandard header"
+			],
+			[
+				"ma",
+				"map\tstandard header"
+			],
+			[
+				"pr",
+				"printf\tprintf …"
+			],
+			[
+				"is",
+				"is_prime"
+			],
+			[
+				"walk",
+				"walk_length"
+			],
+			[
+				"cstd",
+				"cstdio\tstandard header"
+			],
+			[
+				"L",
+				"L"
+			],
+			[
+				"d",
+				"divisor"
+			],
+			[
+				"k",
+				"kth_root"
+			],
+			[
+				"prim",
+				"prime_factorize"
+			],
+			[
+				"lon",
+				"longestSubstring"
+			],
+			[
+				"rea",
+				"read_matrix"
+			],
+			[
+				"A",
+				"A"
+			],
+			[
+				"exe",
+				"execute"
+			],
+			[
+				"mul",
+				"multiply"
+			],
+			[
+				"fr",
+				"format"
+			],
+			[
+				"write",
+				"write_weights"
+			],
+			[
+				"train",
+				"train_time"
+			],
+			[
+				"epoc",
+				"epoch_time"
+			],
+			[
+				"clas",
+				"classes"
+			],
+			[
+				"y",
+				"y_pred"
+			],
+			[
+				"for",
+				"forward"
+			],
+			[
+				"max",
+				"max_child"
+			],
+			[
+				"cn",
+				"candidate"
+			],
+			[
+				"res",
+				"reset_pernah"
+			],
+			[
+				"templ",
+				"template_short"
+			],
+			[
+				"b",
+				"b"
+			],
+			[
+				"s",
+				"s"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.py",
+			"settings":
+			{
+				"buffer_size": 816,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/backend.py",
+			"settings":
+			{
+				"buffer_size": 1460,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/game.py",
+			"settings":
+			{
+				"buffer_size": 3154,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/interface.py",
+			"settings":
+			{
+				"buffer_size": 2705,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/role.py",
+			"settings":
+			{
+				"buffer_size": 2896,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/player.py",
+			"settings":
+			{
+				"buffer_size": 377,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 203.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: For Loop"
+			],
+			[
+				"sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Package Contro",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"ol",
+				"FastOlympicCoding: Run"
+			],
+			[
+				"fas",
+				"FastOlympicCoding: Run"
+			],
+			[
+				"",
+				"FastOlympicCoding: Make Stress"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pre",
+				"Preferences: Settings"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Snippet: java.beans."
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"linter",
+				"Plugin Development: Profile Events"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 428.0
+	},
+	"console":
+	{
+		"height": 416.0,
+		"history":
+		[
+			"glue",
+			"cmd",
+			"cd C:",
+			"g++",
+			"#include <iostream>",
+			"#include",
+			"a",
+			"a**a**a**a",
+			"a**4",
+			"a",
+			"a = 2",
+			"a",
+			"1"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/exercise/Survival/v2",
+		"/D/exercise/Survival/v2/module"
+	],
+	"file_history":
+	[
+		"/D/S1 CS UGM/Skripsi/Bismillaah Wisuda Februari ;)/program/jabriks/models.py",
+		"/D/S1 CS UGM/Skripsi/Bismillaah Wisuda Februari ;)/program/jabriks/utils.py",
+		"/D/exercise/Survival/v2/dummy.py",
+		"/D/exercise/Survival/v2/app.py",
+		"/C/Users/asus/Desktop/Sadasa CP/jawbreaker.cpp",
+		"/C/Users/asus/Desktop/Sadasa CP/memindahkan.cpp",
+		"/C/Users/asus/Desktop/Sadasa CP/tc/osn-2017-memindahkan-berkas_2_1.in",
+		"/C/Users/asus/Desktop/Sadasa CP/tc/osn-2017-memindahkan-berkas_2_1.out",
+		"/C/Users/asus/Desktop/Sadasa CP/tc/osn-2017-memindahkan-berkas_1_1.out",
+		"/C/Users/asus/Desktop/Sadasa CP/zy.out",
+		"/C/Users/asus/Desktop/Sadasa CP/zz.out",
+		"/C/Users/asus/Desktop/Sadasa CP/pendataan.cpp",
+		"/C/Users/asus/Desktop/Sadasa CP/brute.cpp",
+		"/C/Users/asus/Desktop/Sadasa CP/tc/osn-2017-memindahkan-berkas_1_1.in",
+		"/C/Users/asus/Desktop/Sadasa CP/struct.cpp",
+		"/C/Users/asus/Desktop/Sadasa CP/hadiah.cpp",
+		"/D/exercise/Survival/v2/module/backend.py",
+		"/D/exercise/Survival/v2/module/role.py",
+		"/D/exercise/Survival/v2/module/interface.py",
+		"/D/exercise/Survival/v2/module/battle.py",
+		"/D/exercise/Survival/v2/module/game.py",
+		"/C/Users/asus/Desktop/Sadasa CP/kupon.cpp",
+		"/C/Users/asus/Desktop/Sadasa CP/pangkat.cpp",
+		"/C/Users/asus/Desktop/Sadasa CP/sieve.cpp",
+		"/C/Users/asus/Desktop/tc/osn-2017-memindahkan-berkas_1_1.in",
+		"/C/Users/asus/Desktop/tc/osn-2017-memindahkan-berkas_3_1.in",
+		"/C/Users/asus/Desktop/tc/osn-2017-memindahkan-berkas_2_1.in",
+		"/C/Users/asus/Desktop/Sadasa/rekursi.cpp",
+		"/C/Users/asus/Desktop/Sadasa/flamingo.cpp",
+		"/C/Users/asus/Desktop/Sadasa/ppekanbaru.cpp",
+		"/C/Users/asus/Desktop/Sadasa/batik_riau.cpp",
+		"/C/Users/asus/Desktop/Sadasa/teman_dekat.cpp",
+		"/D/Source Code/Mirror Compfest 2020/F.py",
+		"/C/Users/asus/Desktop/Sadasa/priority_queue.cpp",
+		"/C/Users/asus/Desktop/Sadasa/batik_riau - Copy.cpp",
+		"/C/Users/asus/Desktop/batik_riau.cpp",
+		"/C/Users/asus/Desktop/Hacktoberfest2020/content/participant/hyperforest.md",
+		"/D/exercise/Survival/v2/module/player.py",
+		"/D/exercise/Survival/app.py",
+		"/D/exercise/Survival/module/battle.py",
+		"/D/exercise/Survival/module/role.py",
+		"/D/exercise/Survival/module/interface.py",
+		"/D/exercise/Survival/module/game.py",
+		"/D/exercise/Survival/module/player.py",
+		"/D/exercise/Survival/module/character.py",
+		"/D/Apps/Sublime Text Build 3126 x64/Data/Packages/Atomic Color Scheme/Atomic - Dark blue (Hard).tmTheme",
+		"/D/exercise/Survival/module/__init__.py",
+		"/C/Users/asus/Desktop/Zacky/segmentaxis.py",
+		"/C/Users/asus/Desktop/Zacky/frekuensi.py",
+		"/C/Users/asus/Desktop/Zacky/uji_online.py",
+		"/C/Users/asus/Desktop/Zacky/mfcc.py",
+		"/C/Users/asus/Desktop/Zacky/train_nyoba.py",
+		"/C/Users/asus/Desktop/Mini-RPG/module/interface.py",
+		"/C/Users/asus/Desktop/Mini-RPG/module/game.py",
+		"/C/Users/asus/Desktop/Mini-RPG/module/character.py",
+		"/C/Users/asus/Desktop/Mini-RPG/module/battle.py",
+		"/C/Users/asus/Desktop/Mini-RPG/app.py",
+		"/C/Users/asus/Desktop/yolov3-face-mask-detector/data/README.md",
+		"/C/Users/asus/Desktop/solution.txt",
+		"/C/Users/asus/Desktop/Mini-RPG/README.md",
+		"/C/Users/asus/Desktop/Mini-RPG/interface.py",
+		"/C/Users/asus/Desktop/Mini-RPG/battle.py",
+		"/C/Users/asus/Desktop/Mini-RPG/character.py",
+		"/C/Users/asus/Desktop/Mini-RPG/game.py",
+		"/D/Project/Soal CP/Komatik/evaluator.py",
+		"/D/Project/Soal CP/Komatik/d.cpp",
+		"/C/Users/asus/Desktop/Final Project/interface.py",
+		"/C/Users/asus/Desktop/Final Project/character.py",
+		"/C/Users/asus/Desktop/Final Project/app.py",
+		"/C/Users/asus/Desktop/Final Project/battle.py",
+		"/C/Users/asus/Desktop/Final Project/game.py",
+		"/C/Users/asus/Desktop/Final Project/m-app.py",
+		"/C/Users/asus/Desktop/Final Project/utils.py",
+		"/D/Project/Soal CP/Komatik/!solutions/A.cpp",
+		"/D/Project/Soal CP/Komatik/!solutions/B.cpp",
+		"/D/Project/Soal CP/Komatik/!solutions/D.cpp",
+		"/D/Project/Soal CP/Komatik/sol.cpp",
+		"/D/Project/Soal CP/Komatik/program.cpp",
+		"/D/Project/Soal CP/Komatik/Mencari Drop/tc/output/output00.out",
+		"/D/Project/Soal CP/Komatik/Mencari Drop/tc/output/output01.out",
+		"/D/Project/Soal CP/Komatik/Pembagi Ganjil Terbesar/tc/output/output00.out",
+		"/D/Project/Soal CP/Komatik/Pembagi Ganjil Terbesar/tc/input/input00.in",
+		"/D/Project/Soal CP/PCS20/Rumah Kucing/gen-rk.cpp",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05j-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05e-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05e-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05f-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05f-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05g-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05g-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05h-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05h-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05i-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05i-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05j-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05d-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05c-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05c-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05b-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05b-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05a-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05a-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/05d-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02b-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02b-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02a-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02a-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/01f-input.in",
+		"/D/Project/Soal CP/Komatik/Tower/tc/01f-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/00a-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/00b-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/03i-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/03j-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/04a-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/04b-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/04c-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/04d-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/01b-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/01a-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/01c-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/01d-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/01e-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02c-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02d-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02e-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02f-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02g-output.out",
+		"/D/Project/Soal CP/Komatik/Tower/tc/02h-output.out"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 283.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\";\n",
+			"wrap",
+			"query",
+			"bar",
+			"(object)",
+			"__get_stats_exponential",
+			"Character",
+			"text_list",
+			"top_bottom_margin",
+			"np.floor",
+			"stats",
+			"random",
+			"speed",
+			"k_sco",
+			"find_farthest",
+			"rand",
+			"binary",
+			" ",
+			"\n",
+			" ",
+			"\n",
+			" ",
+			"Rimba has always been love to compete. He has joined and won a number of national-level competitions in data science, mathematics, and programming since he was in high school. These include 1st Winner in Data Science Competition ITToday IPB 2019, 1st Winner in Kompetisi Paper Matematika Tingkat Nasional 2019 Himatika UGM, and also being a runner up as in 5th Rank in International Collegiate Programming Competition (ICPC) Universitas Kristen Maranatha 2019 and a finalist in Olimpiade Nasional Matematika dan Ilmu Pengetahuan Alam Perguruan Tinggi (ONMIPA-PT) 2019 as well. This nature of him remains even after he graduated from university.",
+			" ",
+			"history_list",
+			"open",
+			"287",
+			"model",
+			"Secara umum",
+			"Mengenal \\texttt",
+			"Mengenal",
+			"matplotli",
+			"Enal",
+			"mengenal",
+			"password",
+			"developer",
+			"latihan",
+			"fixed",
+			"    ",
+			"     ",
+			"0     2683\n1     2702\n2     2687\n3     2703\n4     2703\n5     2641\n6     2641\n7     2660\n8     2700\n9     2698\n10    2672\n11    1843\n12    2691\n13    2682\n14    2684\n15    2632\n16    2665\n17    1553\n18    2103\n19    2679\n20    2653\n21    2598\n22    2623\n23    2540\n24    2705\n25    2692\n26    2684\n27    2702\n28    2561\n29    2138\n30    2705\n31    2677\n32    2157\n33     573\n34    2599\n35    2658\n36    2686\n37    1725\n38    2673\n39    2678\n40    2681\n41    2662",
+			"const char* cstr = (\"tc//easy/\" + name).c_str();",
+			"diff == \"easy\"",
+			"hard",
+			"asmr",
+			"//hard",
+			"string diff, ",
+			"\"tc/\" +",
+			"srand(time(NULL));",
+			"sleep",
+			"chrono::milliseconds timespan(PAUSE);\n    this_thread::sleep_for(timespan);",
+			"pxpx",
+			"rand",
+			"srand",
+			"997",
+			"save_img",
+			"128",
+			"96",
+			"loss",
+			"filter_range",
+			"_generate_filter_image",
+			"loss",
+			"input_img",
+			"chr",
+			"\\",
+			"##",
+			"and",
+			"mean",
+			"Build",
+			"}\n",
+			"% md",
+			"= ((",
+			"R->pA",
+			"R->pa",
+			"R->p1",
+			"L->pA",
+			"L->pa",
+			"L->p1",
+			"R->p0",
+			"L->p0",
+			"self.pool_size",
+			"scanf",
+			"printf",
+			"print",
+			"save(name)",
+			"string name",
+			"x = rand()",
+			"stdout);\n",
+			"if (n % 2 == 0)",
+			"'",
+			"map<string, bool>",
+			"brute",
+			"ans",
+			"DFS",
+			"();\n",
+			"less",
+			"double",
+			"long double",
+			"scanf(\"%s\", grader);",
+			"real",
+			"pangkat",
+			"Matrix",
+			"appe",
+			"lr",
+			"urlret",
+			"0.0",
+			"1.0",
+			"0.0",
+			"1.0",
+			"no\n",
+			"int",
+			">>>",
+			"yes",
+			"\n",
+			"\n$$",
+			" $",
+			"/3",
+			"380",
+			"raw_input",
+			"print",
+			"Dense",
+			"Layer",
+			"Dense",
+			"exp",
+			"y1",
+			"x3",
+			"x2",
+			"x1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"_get_stats_exponential",
+			"Role",
+			"texts",
+			"add_vmargin",
+			"move_speed",
+			"find_farthest_distance",
+			"binser",
+			"\n",
+			" ",
+			"\n",
+			" ",
+			" \n",
+			"\n",
+			"\\n",
+			"history_paths",
+			"fix",
+			" ",
+			"const char* cstr = (\"tc/\" + diff + \"/\" + name).c_str();",
+			"const char* cstr = (\"tc//hard/\" + name).c_str();",
+			"diff == \"hard\"",
+			"sample",
+			"zzz",
+			"easy",
+			"/asmr",
+			"",
+			"\"tc//\" +",
+			"Sleep",
+			"srand",
+			"rnd",
+			"pxpx",
+			"PAUSE",
+			"ord",
+			"",
+			"#",
+			"&&",
+			"build",
+			"% md)",
+			"= (((",
+			"(R->pA)",
+			"(R->pa)",
+			"(R->p1)",
+			"(L->pA)",
+			"(L->pa)",
+			"(L->p1)",
+			"(R->p0)",
+			"(L->p0)",
+			"self.POOL_SIZE",
+			"save(N, name)",
+			"char name[]",
+			"int x = rand()",
+			"stdout);\n    srand(time(NULL));\n",
+			"x = rand() % 2;\n        if (x % 2 == 0)",
+			"x = rand() % 2;\nif (n % 2 == 0)",
+			"\"",
+			"set<string>",
+			"generate",
+			"BFS",
+			"less_than",
+			"long double",
+			"double",
+			"cin >> grader;",
+			"cin >> grader",
+			"ans",
+			"mp",
+			"BuildMatrix",
+			"no",
+			"yes",
+			"no",
+			"yes\n",
+			"ll",
+			"no",
+			" ",
+			"\n$$latex ",
+			" $latex ",
+			"input",
+			"print(",
+			"y5",
+			"_x3",
+			"_x2",
+			"_x1",
+			"cnt",
+			"},",
+			",\n",
+			"\"}\n{",
+			"\", ",
+			"\"\n\"",
+			"\"\n\n\"",
+			"\"\n",
+			"\" \"",
+			"i",
+			"\n",
+			", ",
+			"init_mode",
+			"    ",
+			"feed_forward",
+			"    ",
+			"input_shape",
+			"n_classes",
+			"__inference",
+			"__rv",
+			"",
+			"tmp",
+			"skrg",
+			"sblm",
+			"stk",
+			"ls",
+			"   ",
+			"NumPy",
+			"get_E(",
+			"get_V(",
+			"get_V",
+			"adj_list",
+			"adj_matrix",
+			"edge_list",
+			"vertex_label",
+			"E",
+			"V",
+			"spectral_feature",
+			"edge_list_to_adj_list",
+			"edge_list_to_adj_matrix",
+			"random_adj_matrix",
+			"random_edge_list",
+			"numpify_edge_list",
+			"\\",
+			"\\n",
+			"",
+			"s"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 148.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "module/backend.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								904,
+								904
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 481.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "module/game.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2804,
+								2804
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1782.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "module/interface.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "module/role.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2371,
+								2371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1212.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "module/player.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 210.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "game.sublime-project",
+	"replace":
+	{
+		"height": 82.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"a",
+				"C:\\Users\\asus\\Desktop\\latihang\\C.cpp"
+			],
+			[
+				"",
+				"C:\\Users\\asus\\Desktop\\latihang\\C.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 101.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"comb"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,34 +1,35 @@
-from module.game import Game
-from module.interface import clear, query, wait, wrap, Prompt
+from module.game import Game, load_game
+from module.interface import clear, query, wait, generate_text_box
+from module.interface import HOME
+from module.backend import AbstractPrompt, Prompt
 
-HOME = '''
-----------------------------------------
-|              Survival                |
-----------------------------------------
+class MainMenu(AbstractPrompt):
+    def build(self):
+        self.options = [self.start, self.load, self.end]
+        self.stops = [self.end]
 
-(1) New game
-(2) Exit'''
+    def ask(self):
+        return query(header=HOME,
+            num=len(self.options))
 
-@Prompt
-class MainMenu:
-    def ask():
-        return query(HOME, num=3)
-
-    def start():
+    def start(self):
         game = Game()
+        game.new()
+
+    def load(self):
+        game = load_game()
         game.start()
 
-    def end():
-        wrap('Thanks for Playing!', newline=True)
+    def end(self):
+        tbox = generate_text_box(
+            'Thanks for playing!',
+            h_margin=9)
+        print(tbox)
         wait()
         clear()
-        # exit()
-
-    functions = [start, end]
-    stop = [end]
 
 def main():
-    menu = MainMenu()
+    menu = Prompt(MainMenu())
     menu.run()
 
 if __name__ == '__main__':

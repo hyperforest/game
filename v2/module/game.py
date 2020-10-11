@@ -1,50 +1,124 @@
 from . import battle
+from .backend import AbstractPrompt, Prompt
 from .role import Knight, Archer
-from .interface import clear, query, simple_query, Prompt
+from .interface import clear, wait, generate_text_box
+from .interface import query, numbered_query, simple_query
+from .interface import HOME, MENU, CHOOSE_ROLE
+from .player import Player
+from .role import get_role
+import pickle
 
-PLAYER = None
+def load_game():
+    save_name = query(message='Insert file name')
+    save_name += '.pkl'
 
-MENU = '''
-----------------------------------------
-|              Main Menu               |
-----------------------------------------
+    result = ''
+    with open(save_name, 'rb') as f:
+        result = pickle.load(f)
 
-(1) Survival
-(2) Back to home'''
+    print('\nGame successfully loaded!')
+    print('Press enter to start playing %s' % save_name)
+    wait()
+    return result
 
-CHOOSE_SURVIVOR = '''
-----------------------------------------
-|           Choose Your Role           |
-----------------------------------------
+class _GamePrompt(AbstractPrompt):
+    def __init__(self, game):
+        self.game = game
 
-(1) Knight
-(2) Archer'''
+    def build(self):
+        self.options = [self.battle, self.save, self.back]
+        self.stops = [self.back]
 
-@Prompt
-class _GameStarter:
-    def ask():
-        return query(MENU, num=3)
+    def ask(self):
+        return query(header=self.game.header + MENU,
+            num=len(self.options))
 
-    def battle():
-        # should be start battle
+    def battle(self):
+        # TO DO: should be start battle
         clear()
         print('under construction')
 
-    def back():
-        clear()
+    def save(self):
+        self.game.save()
 
-    functions = [battle, back]
-    stop = [back]
+    def back(self):
+        clear()
+    
 
 class Game(object):
     def __init__(self):
-        self.starter = _GameStarter()
-        self.player = None
-
-        clear()
-        char = query(CHOOSE_SURVIVOR, num=2)
-        name = simple_query('Insert your name')
-        # TO DO: implement game start more
+        self.name = None
+        self.players = []
+        self.num_players = 1
+        self.prompt = None
 
     def start(self):
-        self.starter.run()
+        clear()
+        self.prompt.run()
+
+    def new(self):
+        clear()
+        new_box = generate_text_box('New Game', h_margin=15)
+        print(new_box)
+
+        self.name = query(message='Insert game name')
+        self.num_players = query(return_int=True,
+            message='Enter number of players')
+
+        for i in range(1, 1 + self.num_players):
+            clear()
+            
+            SETUP = generate_text_box(
+                ('Setup for player %d\n' % i) +
+                ('(total: %d)' % self.num_players)
+                )
+            print(SETUP + CHOOSE_ROLE)
+            role_message = ('Select player %d role' % i)
+            name_message = ('Insert player %d name' % i)
+            
+            role_index = numbered_query(
+                message=role_message,
+                num=2, return_int=True)
+            name = simple_query(name_message)
+
+            role = get_role(role_index)
+            player = Player(name=name, role=role)
+            self.players.append(player)
+
+        header = '> Game name: %s <\n' % self.name
+        header += 'Players:\n'
+
+        for i in range(self.num_players):
+            header += ('(%d) %s' % (i + 1,
+                self.players[i].get_name()))
+            if i < self.num_players - 1:
+                header += '\n'
+
+        self.header = generate_text_box(header)
+        self.prompt = Prompt(_GamePrompt(self))
+        self.start()
+        # TO DO: implement game start more
+
+    def save(self):
+        save_name = query(message='Insert file name')
+        save_name += '.pkl'
+        with open(save_name, 'wb') as f:
+            pickle.dump(self, f)
+        
+        print('\nGame successfully saved!')
+        print('Saved to %s' % save_name)
+        wait()
+
+'''
+1
+CHON
+4
+1
+Mario Camarena
+2
+Erick Hansel
+1
+Esiah Camarena
+2
+Nathan Camarena
+'''
