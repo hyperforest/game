@@ -1,3 +1,3 @@
-Repository for my own game.
+Currently containing unnamed game in `v2` directory and still maintaining.
 
-Currently being maintained in `v2` directory. Please look into README located in `v2` instead.
+Please look into README located in `v2` instead.
