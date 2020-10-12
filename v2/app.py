@@ -1,23 +1,22 @@
-from module.game import Game, load_game
+from module.game import Game, load
 from module.interface import clear, query, wait, generate_text_box
 from module.interface import HOME
-from module.backend import AbstractPrompt, Prompt
+from module.backend import Prompt
 
-class MainMenu(AbstractPrompt):
+class MainMenu(Prompt):
     def build(self):
         self.options = [self.start, self.load, self.end]
         self.stops = [self.end]
 
     def ask(self):
-        return query(header=HOME,
-            num=len(self.options))
+        return query(header=HOME, num=len(self.options))
 
     def start(self):
         game = Game()
         game.new()
 
     def load(self):
-        game = load_game()
+        game = load()
         game.start()
 
     def end(self):
@@ -29,7 +28,7 @@ class MainMenu(AbstractPrompt):
         clear()
 
 def main():
-    menu = Prompt(MainMenu())
+    menu = MainMenu()
     menu.run()
 
 if __name__ == '__main__':

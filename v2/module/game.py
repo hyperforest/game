@@ -1,5 +1,5 @@
 from . import battle
-from .backend import AbstractPrompt, Prompt
+from .backend import Prompt
 from .role import Knight, Archer
 from .interface import clear, wait, generate_text_box
 from .interface import query, numbered_query, simple_query
@@ -8,21 +8,24 @@ from .player import Player
 from .role import get_role
 import pickle
 
-def load_game():
-    save_name = query(message='Insert file name')
-    save_name += '.pkl'
+def _load_from_path(path):
+    with open(path, 'rb') as f:
+        return pickle.load(f)
 
-    result = ''
-    with open(save_name, 'rb') as f:
-        result = pickle.load(f)
+def load():
+    save_name = query(message='Insert file name')
+    if not save_name.endswith('.pkl'):
+        save_name += '.pkl'
+    result = _load_from_path(save_name)
 
     print('\nGame successfully loaded!')
     print('Press enter to start playing %s' % save_name)
     wait()
     return result
 
-class _GamePrompt(AbstractPrompt):
+class _GamePrompt(Prompt):
     def __init__(self, game):
+        super().__init__()
         self.game = game
 
     def build(self):
@@ -85,6 +88,7 @@ class Game(object):
             player = Player(name=name, role=role)
             self.players.append(player)
 
+        # create header
         header = '> Game name: %s <\n' % self.name
         header += 'Players:\n'
 
@@ -95,7 +99,7 @@ class Game(object):
                 header += '\n'
 
         self.header = generate_text_box(header)
-        self.prompt = Prompt(_GamePrompt(self))
+        self.prompt = _GamePrompt(self)
         self.start()
         # TO DO: implement game start more
 

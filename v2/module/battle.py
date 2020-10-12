@@ -1,6 +1,6 @@
 import numpy as np
 from .role import Knight, Archer
-from .interface import bar, clear, wait
+from .interface import clear, wait
 
 def random_lawan():
     hp = np.random.randint(80, 100)

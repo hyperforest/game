@@ -1,21 +1,15 @@
-from .interface import clear, bar, wait, query, generate_text_box
+from .interface import clear, wait, query, generate_text_box
 
-class AbstractPrompt:
+class Prompt:
+    def __init__(self):
+        self.built = False
+
     def build(self):
         self.options = []
         self.stops = []
 
     def ask(self):
         return query()
-
-class Prompt:
-    def __init__(self, prompt):
-        self.prompt = prompt
-        self.prompt.build()
-        if hasattr(prompt, 'head'):
-            self.head = self.prompt.head
-        if hasattr(prompt, 'foot'):
-            self.foot = self.prompt.foot
 
     def head(self):
         pass
@@ -24,7 +18,10 @@ class Prompt:
         pass
 
     def run(self):
-        num_options = len(self.prompt.options)
+        if not self.built:
+            self.build()
+
+        num_options = len(self.options)
         availables = [str(_ + 1) for _ in range(num_options)]
 
         continue_ask = True
@@ -32,16 +29,15 @@ class Prompt:
             clear()
             self.head()
             
-            opt = self.prompt.ask()
+            opt = self.ask()
             if opt not in availables:
                 self.repeat(opt)
                 continue
 
             for i in range(num_options):
                 if opt == availables[i]:
-                    self.prompt.options[i]()
-                    continue_ask = (self.prompt.options[i]
-                        not in self.prompt.stops)
+                    self.options[i]()
+                    continue_ask = (self.options[i] not in self.stops)
             
             if not continue_ask:
                 break

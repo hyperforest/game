@@ -28,24 +28,8 @@ CHOOSE_ROLE = '''
 def clear():
     os.system('cls')
 
-def bar(char='-', num=40, show=True):
-    if show:
-        print(char * num)
-        return
-    return char * num
-
 def wait():
     _ = input()
-
-def wrap(message, clr=False, newline=False):
-    if clr:
-        clear()
-    if newline:
-        print()
-    
-    bar()
-    print(message)
-    bar()
 
 def simple_query(message=None, return_int=False):
     if message == None:
