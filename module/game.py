@@ -43,12 +43,29 @@ def pilih_karakter():
     NAMA_KARAKTER = '> Masukkan nama karakter anda: '
 
     player = None
-    char = input(PILIH_KARAKTER)
+    
+    while True:
+        try:
+            char = int(input(PILIH_KARAKTER))
+
+        except ValueError:
+            char = -1
+
+        if char >= 1 and char <= 2:
+            break
+
+        clear()
+        bar()
+        print('PILIHAN TIDAK TERSEDIA!')
+        print('Silakan pilih menu lain.')
+        bar()
+    
+
     name = input(NAMA_KARAKTER)
     
-    if char == '1':
+    if char == 1:
         player = Knight(name=name)
-    elif char == '2':
+    elif char == 2:
         player = Archer(name=name)
 
     return player
