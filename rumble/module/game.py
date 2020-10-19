@@ -1,18 +1,19 @@
 from . import battle
 from .backend import Prompt
-from .role import Knight, Archer
+from .battle import Rumble10, Rumble100
+from .role import Player
+from .role import get_role
 from .interface import clear, wait, generate_text_box
 from .interface import query, numbered_query, simple_query
-from .interface import HOME, CHOOSE_ROLE
-from .player import Human
-from .role import get_role
+from .interface import HOME
 import pickle
 
 MENU = '''
 (1) Rumble!
-(2) Player stats
-(3) Save game
-(4) Back to home
+(2) Big Rumble!
+(3) Player stats
+(4) Save game
+(5) Back to home
 '''
 
 def _load_from_path(path):
@@ -36,8 +37,8 @@ class _GamePrompt(Prompt):
         self.game = game
 
     def build(self):
-        self.options = [self.battle, self.stats, self.save, self.back]
-        self.stops = [self.back]
+        self.options = [self.rumble10, self.rumble100, self.stats, self.save,
+            self.back]
 
     def ask(self):
         return query(header=self.game.header + MENU,
@@ -46,23 +47,27 @@ class _GamePrompt(Prompt):
     def stats(self):
         self.game.stats()
 
-    def battle(self):
-        # TO DO: should be start battle
-        clear()
-        print('under construction')
+    def rumble10(self):
+        battle = Rumble10(self.game)
+        battle.new()
+        battle.start()
+
+    def rumble100(self):
+        battle = Rumble100(self.game)
+        battle.new()
+        battle.start()
 
     def save(self):
         self.game.save()
 
     def back(self):
-        clear()
-    
+        self.continue_ask = False
 
 class Game(object):
     def __init__(self):
         self.name = None
         self.players = []
-        self.num_players = 1
+        self.num_players = 0
         self.prompt = None
         self.header = ''
 
@@ -80,33 +85,18 @@ class Game(object):
         new_box = generate_text_box('New Game', h_margin=15)
         print(new_box)
 
-        self.name = query(message='Insert game name')
+        self.name = query(message='Insert game name        ')
         self.num_players = query(return_int=True,
-            message='Enter number of players')
+            message='Enter number of players ')
 
         for i in range(1, 1 + self.num_players):
-            clear()
-            
-            SETUP = generate_text_box(
-                ('Setup for player %d\n' % i) +
-                ('(total: %d)' % self.num_players)
-                )
-            print(SETUP + CHOOSE_ROLE)
-            role_message = ('Select player %d role' % i)
-            name_message = ('Insert player %d name' % i)
-            
-            role_index = numbered_query(
-                message=role_message,
-                num=2, return_int=True)
+            name_message = ('Insert Player %d name    ' % i)
             name = simple_query(name_message)
-
-            role = get_role(role_index)
-            player = Human(name=name, role=role)
+            player = Player(name=name)
             self.players.append(player)
 
         self._create_header()
         self.prompt = _GamePrompt(self)
-        self.start()
 
     def save(self):
         save_name = query(message='Insert file name')
@@ -124,7 +114,7 @@ class Game(object):
 
         for i in range(self.num_players):
             header += ('(%d) %s' % (i + 1,
-                self.players[i].get_name()))
+                self.players[i].name))
             if i < self.num_players - 1:
                 header += '\n'
 
@@ -134,12 +124,14 @@ class Game(object):
 1
 CHON
 4
+Mario
+Erick
+Esiah
+Nathan
 1
-Mario Camarena
-2
-Erick Hansel
 1
-Esiah Camarena
-2
-Nathan Camarena
+1
+1
+1
+
 '''

@@ -6,7 +6,6 @@ from module.backend import Prompt
 class MainMenu(Prompt):
     def build(self):
         self.options = [self.start, self.load, self.end]
-        self.stops = [self.end]
 
     def ask(self):
         return query(header=LOGO + HOME, num=len(self.options))
@@ -14,15 +13,15 @@ class MainMenu(Prompt):
     def start(self):
         game = Game()
         game.new()
+        game.start()
 
     def load(self):
         game = load()
         game.start()
 
     def end(self):
-        tbox = generate_text_box(
-            'Thanks for playing!',
-            h_margin=9)
+        self.continue_ask = False
+        tbox = generate_text_box('Thanks for playing!', h_margin=9)
         print(tbox)
         wait()
         clear()

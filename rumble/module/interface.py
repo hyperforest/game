@@ -23,13 +23,18 @@ CHOOSE_ROLE = '''
 ------------------------------
 
 (1) Knight
-(2) Archer
 '''
 
-_CLEAR = 'cls' if sys.platform == "win32" else 'clear'
+BATTLE = '''
+(1) Player details
+(2) Player location
+(3) Quit battle
+'''
+
+_CLEAR_ = 'cls' if sys.platform == "win32" else 'clear'
 
 def clear():
-    os.system(_CLEAR)
+    os.system(_CLEAR_)
 
 def wait():
     _ = input()
@@ -57,7 +62,6 @@ def numbered_query(message=None, num=2, return_int=False):
     return simple_query(message, return_int=return_int)
 
 def query(message=None, header=None, num=None, return_int=False):
-    
     if header != None:
         print(header)
 
